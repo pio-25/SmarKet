@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmarKet - Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/LOGO.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="main1">
+      <input
+        type="checkbox"
+        class="menu-btn"
+        id="menu-btn"
+        aria-label="menu-btn"
+      />
+
+      <header>
+        <div class="header-top">
+          <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+          </label>
+
+          <div class="nav-location">
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i>PUNE, MAHARASTRA</a
+            >
+          </div>
+
+          <a href="#" class="logo">
+            <img src="images/LOGO.png" alt="logo" />
+          </a>
+
+          <div class="nav-btn">
+            <a href="javascript:void(0);" class="nav-search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+            </a>
+            <a href="javascript:void(0);" class="nav-user"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                />
+              </svg>
+            </a>
+            <a href="cart.html" class="nav-cart"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path
+                  d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+                />
+              </svg>
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#category">Category</a></li>
+            <li><a href="index.html#shopping-banner">Shop</a></li>
+            <li>
+              <a href="index.html#popular">Popular</a>
+              <span class="nav-label">Hot Offer</span>
+            </li>
+            <li><a href="index.html#recent-products">Recent</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <div class="search-bar">
+      <form class="search-input">
+        <input type="text" name="search" placeholder="Search For Product" />
+        <a href="javascript:void(0);" class="search-cancel"
+          ><i class="fa-solid fa-xmark"></i>
+        </a>
+      </form>
+    </div>
+
+    <div class="form">
+      <div class="login-form">
+        <a href="javascript:void(0);" class="form-cancel"
+          ><i class="fa-solid fa-xmark"></i>
+        </a>
+        <strong>Login</strong>
+        <form>
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <label for="login-role" class="form-label">Role</label>
+          <select id="login-role" name="role" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="seller">Seller</option>
+            <option value="buyer">Buyer</option>
+          </select>
+          <input type="submit" value="Login" />
+        </form>
+        <div class="form-btn">
+          <a href="#" class="forget">Forget Your Password?</a>
+          <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+        </div>
+      </div>
+
+      <div class="signup-form">
+        <a href="javascript:void(0);" class="form-cancel"
+          ><i class="fa-solid fa-xmark"></i>
+        </a>
+        <strong>Sign Up</strong>
+        <form>
+          <input type="text" name="Fullname" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <label for="signup-role" class="form-label">Role</label>
+          <select id="signup-role" name="role" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="seller">Seller</option>
+            <option value="buyer">Buyer</option>
+          </select>
+          <input type="submit" value="Sign Up" />
+        </form>
+        <div class="form-btn">
+          <a href="javascript:void(0);" class="already-account"
+            >Already Have an Account?
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="checkout-container">
+      <!-- Order Summary Section -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="order-items-list" class="order-items-list">
+          <!-- Order items will be dynamically added here by JavaScript -->
+        </ul>
+
+        <div class="order-total-section">
+          <p>Subtotal: <span id="subtotal-price">Rs.0.00</span></p>
+          <p>Shipping: <span id="shipping-price">Rs.5.00</span></p>
+          <hr />
+          <p>
+            Total: <span id="total-price" class="total-price">Rs.0.00</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Payment Details Section -->
+      <div class="payment-details">
+        <h2>Payment Details</h2>
+        <div class="payment-options">
+          <button id="card-option" class="active">Card</button>
+          <button id="upi-option">UPI</button>
+          <button id="cod-option">Cash on Delivery</button>
+        </div>
+
+        <div id="card-form" class="payment-form-content active">
+          <form class="payment-form">
+            <div class="form-group">
+              <label for="card-name">Name on Card</label>
+              <input type="text" id="card-name" required />
+            </div>
+            <div class="form-group">
+              <label for="card-number">Card Number</label>
+              <input
+                type="text"
+                id="card-number"
+                placeholder="XXXX-XXXX-XXXX-XXXX"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="exp-date">Expiration Date</label>
+                <input type="text" id="exp-date" placeholder="MM/YY" required />
+              </div>
+              <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="XXX" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="billing-address">Billing Address</label>
+              <input type="text" id="billing-address" required />
+            </div>
+          </form>
+        </div>
+
+        <div id="upi-form" class="payment-form-content">
+          <form class="payment-form">
+            <div class="form-group">
+              <label for="upi-id">UPI ID</label>
+              <input
+                type="text"
+                id="upi-id"
+                placeholder="yourname@bank"
+                required
+              />
+            </div>
+            <p>
+              You will be redirected to your UPI app to complete the payment.
+            </p>
+          </form>
+        </div>
+
+        <div id="cod-form" class="payment-form-content">
+          <p>Pay with cash when your order is delivered to your doorstep.</p>
+        </div>
+
+        <button id="place-order-btn" class="btn-place-order">
+          Place Order
+        </button>
+      </div>
+    </div>
+
+    <!-- services -->
+    <section class="services">
+      <!-- service-box -->
+      <div class="service-box">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Free Shipping</span>
+        <p>Free shipping for all orders</p>
+      </div>
+
+      <!-- service-box -->
+      <div class="service-box">
+        <i class="fa-solid fa-headphones"></i>
+        <span>Support 24/7</span>
+        <p>We Support 24H a day</p>
+      </div>
+
+      <!-- service-box -->
+      <div class="service-box">
+        <i class="fa-solid fa-rotate"></i>
+        <span>100% Money Back</span>
+        <p>You have 30 days to return</p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- company-box -->
+        <div class="footer-company-box">
+          <!-- logo -->
+          <a href="#" class="footer-logo">
+            <img src="images/LOGO.png" alt="logo" />
+          </a>
+          <!-- details -->
+          <p>
+            SmarKet is a unique online platform dedicated to celebrating student
+            creativity.
+          </p>
+          <!-- social -->
+          <div class="footer-social">
+            <!-- facebook -->
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <!-- instagram -->
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- link -->
+        <div class="footer-link-box">
+          <strong>Main Links</strong>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#category">Categories</a></li>
+            <li><a href="#shopping-banner">Shop</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#recent-products">Recent</a></li>
+          </ul>
+        </div>
+
+        <!-- subscribe -->
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <p>Fresh products, straight to your inbox.</p>
+          <form class="subscribe-box">
+            <input type="email" placeholder="Email" name="subscribe" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="footer-bottom">
+        <span>MADE BY SMARKET</span>
+        <span>&copy; COPYRIGHT 2025 - SMARKET</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

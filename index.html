@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmarKet</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="images/LOGO.png" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="main">
+      <!-- btn -->
+      <input
+        type="checkbox"
+        class="menu-btn"
+        id="menu-btn"
+        aria-label="menu-btn"
+      />
+
+      <!-- header -->
+      <header>
+        <!-- header top -->
+        <div class="header-top">
+          <!-- menu-icon -->
+          <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+          </label>
+
+          <!-- location -->
+          <div class="nav-location">
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i>PUNE, MAHARASTRA</a
+            >
+          </div>
+
+          <!-- logo -->
+          <a href="#" class="logo">
+            <img src="images/LOGO.png" alt="logo" />
+          </a>
+
+          <!-- nav-btns -->
+          <div class="nav-btn">
+            <!-- search -->
+            <a href="javascript:void(0);" class="nav-search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+            </a>
+            <!-- user -->
+            <a href="javascript:void(0);" class="nav-user"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                />
+              </svg>
+            </a>
+            <!-- wishlist -->
+            <a href="wishlist.html" class="nav-wishlist">
+              <i class="fa-solid fa-heart"></i>
+              <span id="wishlist-count">0</span>
+            </a>
+            <!-- cart -->
+            <a href="cart_payment.html" class="nav-cart"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path
+                  d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+                />
+              </svg>
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- navigation -->
+        <nav class="navigation">
+          <!-- menu -->
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#category">Category</a></li>
+            <li><a href="#shopping-banner">Shop</a></li>
+            <li>
+              <a href="#popular">Popular</a>
+              <span class="nav-label">Hot Offer</span>
+            </li>
+            <li><a href="#recent-products">Recent</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- content -->
+      <div class="main-content">
+        <!-- text -->
+        <div class="main-content-text">
+          <strong>Collection</strong>
+          <h1>
+            Handmade treasures,<br />
+            just for you!
+            <!-- Turning creativity into something you can hold -->
+          </h1>
+          <br />
+          <p>Discover unique creations, crafted with care.</p>
+          <a href="#popular">Shop Now</a>
+        </div>
+        <!-- img -->
+        <div class="main-content-img">
+          <img
+            src="images/Baked Goods/DarkChocolateMoussePastry-1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- search -->
+    <div class="search-bar">
+      <!-- search-input -->
+      <form class="search-input">
+        <input type="text" name="search" placeholder="Search For Product" />
+        <!-- cancel-btn -->
+        <a href="javascript:void(0);" class="search-cancel"
+          ><i class="fa-solid fa-xmark"></i>
+        </a>
+      </form>
+    </div>
+
+    <!-- Login and SignUp -->
+    <div class="form">
+      <!-- login -->
+      <div class="login-form">
+        <!-- close-btn -->
+        <a href="javascript:void(0);" class="form-cancel"
+          ><i class="fa-solid fa-xmark"></i>
+        </a>
+        <strong>Login</strong>
+        <form>
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <label for="login-role" class="form-label">Role</label>
+          <select id="login-role" name="role" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="seller">Seller</option>
+            <option value="buyer">Buyer</option>
+          </select>
+          <input type="submit" value="Login" />
+        </form>
+        <div class="form-btn">
+          <a href="#" class="forget">Forget Your Password?</a>
+          <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+        </div>
+      </div>
+
+      <!-- signup -->
+      <div class="signup-form">
+        <!-- close-btn -->
+        <a href="javascript:void(0);" class="form-cancel"
+          ><i class="fa-solid fa-xmark"></i>
+        </a>
+        <strong>Sign Up</strong>
+        <form>
+          <input type="text" name="Fullname" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <label for="signup-role" class="form-label">Role</label>
+          <select id="signup-role" name="role" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="seller">Seller</option>
+            <option value="buyer">Buyer</option>
+          </select>
+          <input type="submit" value="Sign Up" />
+        </form>
+        <div class="form-btn">
+          <a href="javascript:void(0);" class="already-account"
+            >Already Have an Account?
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category -->
+    <section id="category">
+      <!-- box1-->
+      <a href="baked-goods.html" class="category-box">
+        <!-- img -->
+        <div class="category-box-img">
+          <img
+            src="images/Baked Goods/RedVelvetCupcake-bg.png"
+            alt="Baked Goods"
+          />
+          <!-- text -->
+          <strong>Baked Goods</strong>
+        </div>
+      </a>
+      <!-- box2-->
+      <a href="jewellery.html" class="category-box">
+        <!-- img -->
+        <div class="category-box-img">
+          <img
+            src="images/Jewellery/Pink_Bow-Pearl_Necklace-bg.png"
+            alt="Handmade Jewellery"
+          />
+          <!-- text -->
+          <strong>Jewellery</strong>
+        </div>
+      </a>
+      <!-- box3-->
+      <a href="clothes.html" class="category-box">
+        <!-- img -->
+        <div class="category-box-img">
+          <img
+            src="images/Clothes/Blue_Top_Flower-Printed_-bg.png"
+            alt="Clothes"
+          />
+          <!-- text -->
+          <strong>Clothes</strong>
+        </div>
+      </a>
+      <!-- box4-->
+      <a href="paintings.html" class="category-box">
+        <!-- img -->
+        <div class="category-box-img">
+          <img src="images/Paintings/Winnie_The_Pooh-bg.png" alt="Paintings" />
+          <!-- text -->
+          <strong>Paintings</strong>
+        </div>
+      </a>
+    </section>
+
+    <!-- popular products -->
+    <section id="popular">
+      <h2>Popular Products</h2>
+
+      <!-- container -->
+      <div class="popular-dress-container">
+        <!-- product-container -->
+        <div class="popular-product-container">
+          <!-- box1 -->
+          <div class="product-box">
+            <!-- img -->
+            <a href="#" class="product-box-img">
+              <img
+                src="images/Jewellery/Jhumke(White Pearl)1.jpg"
+                alt="Jewellery"
+              />
+              <span>New</span>
+            </a>
+            <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title">White Pearl Jhumke</a>
+              <span>Rs.160 </span>
+              <button
+                class="product-cart-btn"
+                data-product-id="101"
+                data-product-name="White Pearl Jhumke"
+                data-product-price="160"
+                data-product-category="Jewellery"
+                data-product-image="images/Jewellery/Jhumke(White Pearl)1.jpg"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- box2 -->
+          <div class="product-box">
+            <!-- img -->
+            <a href="#" class="product-box-img">
+              <img src="images/Clothes/Beige Top1.webp" alt="Clothes" />
+              <span>New</span>
+            </a>
+            <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title">Beige Top </a>
+              <span>Rs.199 </span>
+              <button
+                class="product-cart-btn"
+                data-product-id="301"
+                data-product-name="Beige Top"
+                data-product-price="199"
+                data-product-category="Clothes"
+                data-product-image="images/Clothes/Beige Top1.webp"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- box3 -->
+          <div class="product-box">
+            <!-- img -->
+            <a href="#" class="product-box-img">
+              <img
+                src="images/Baked Goods/AssortedBrownieBox of 6.jpg"
+                alt="Baked Goods"
+              />
+              <span>New</span>
+            </a>
+            <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title"
+                >Assorted Brownie Box of 6</a
+              >
+              <span>Rs.199 </span>
+              <button
+                class="product-cart-btn"
+                data-product-id="501"
+                data-product-name="Assorted Brownie Box of 6"
+                data-product-price="199"
+                data-product-category="Baked Goods"
+                data-product-image="images/Baked Goods/AssortedBrownieBox of 6.jpg"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- box4 -->
+          <div class="product-box">
+            <!-- img -->
+            <a href="#" class="product-box-img">
+              <img src="images/Paintings/Lord Krishna.png" alt="Paintings" />
+              <span>New</span>
+            </a>
+            <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title">Lord Krishna(Painting)</a>
+              <span>Rs.299 </span>
+              <button
+                class="product-cart-btn"
+                data-product-id="701"
+                data-product-name="Lord Krishna(Painting)"
+                data-product-price="299"
+                data-product-category="Paintings"
+                data-product-image="images/Paintings/Lord Krishna.png"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- box5 -->
+          <div class="product-box">
+            <!-- img -->
+            <a href="#" class="product-box-img">
+              <img src="images/Clothes/Moon_Shirt.webp" alt="Clothes" />
+              <span>New</span>
+            </a>
+            <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title">Moon Shirt</a>
+              <span>Rs.299 </span>
+              <button
+                class="product-cart-btn"
+                data-product-id="302"
+                data-product-name="Moon Shirt"
+                data-product-price="299"
+                data-product-category="Clothes"
+                data-product-image="images/Clothes/Moon_Shirt.webp"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- box6 -->
+          <div class="product-box">
+            <!-- img -->
+            <a href="#" class="product-box-img">
+              <img
+                src="images/Baked Goods/ChocolateCoatedBiscuits.webp"
+                alt="Baked Goods"
+              />
+              <span>New</span>
+            </a>
+            <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title"
+                >Chocolate Coated Biscuits</a
+              >
+              <span>Rs.199 </span>
+              <button
+                class="product-cart-btn"
+                data-product-id="502"
+                data-product-name="Chocolate Coated Biscuits"
+                data-product-price="199"
+                data-product-category="Baked Goods"
+                data-product-image="images/Baked Goods/ChocolateCoatedBiscuits.webp"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- banner -->
+        <div class="popular-banner">
+          <!-- text -->
+          <div class="popular-banner-text">
+            <h3>At Rs.199</h3>
+            <a href="clothes.html">Shop Now</a>
+          </div>
+          <!-- img -->
+          <div class="popular-banner-img">
+            <img
+              src="images/Clothes/White Top(Flower-Printed).webp"
+              alt="banner"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- shopping-banner -->
+    <section id="shopping-banner">
+      <div class="shopping-banner-container">
+        <!-- text -->
+        <div class="shopping-banner-text">
+          <strong>Collection</strong>
+          <h3>Beautiful Jewellery</h3>
+          <p>Made with hands, meant for hearts.</p>
+          <a href="jewellery.html">Shop Now</a>
+        </div>
+        <!-- img -->
+        <div class="shopping-banner-img">
+          <img src="images/Jewellery/Sea Blue Necklace Set.jpg" alt="" />
+          <img src="images/Jewellery/Pink-Green Flower bracelet.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- recent-add -->
+    <section id="recent-products">
+      <h2>Recent Products</h2>
+
+      <!-- container -->
+      <div class="recent-product-container">
+        <!-- box1 -->
+        <div class="product-box">
+          <!-- img -->
+          <a href="#" class="product-box-img">
+            <img src="images/Clothes/Cotton Shirt1.jpg" alt="Clothes" />
+            <span>New</span>
+          </a>
+          <!-- text -->
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Cotton Shirt</a>
+            <span>Rs.299 </span>
+            <button
+              class="product-cart-btn"
+              data-product-id="303"
+              data-product-name="Cotton Shirt"
+              data-product-price="299"
+              data-product-category="Clothes"
+              data-product-image="images/Clothes/Cotton Shirt1.jpg"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- box2 -->
+        <div class="product-box">
+          <!-- img -->
+          <a href="#" class="product-box-img">
+            <img
+              src="images/Baked Goods/BlackForestPastry.webp"
+              alt="Baked Goods"
+            />
+            <span>New</span>
+          </a>
+          <!-- text -->
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Black Forest Pastry</a>
+            <span>Rs.199 </span>
+            <button
+              class="product-cart-btn"
+              data-product-id="503"
+              data-product-name="Black Forest Pastry"
+              data-product-price="199"
+              data-product-category="Baked Goods"
+              data-product-image="images/Baked Goods/BlackForestPastry.webp"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- box3 -->
+        <div class="product-box">
+          <!-- img -->
+          <a href="#" class="product-box-img">
+            <img
+              src="images/Jewellery/MultiColor Flower Earrings.jpg"
+              alt="Jewellery"
+            />
+            <span>New</span>
+          </a>
+          <!-- text -->
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">MultiColor Flower Hoops</a>
+            <span>Rs.150 </span>
+            <button
+              class="product-cart-btn"
+              data-product-id="102"
+              data-product-name="MultiColor Flower Hoops"
+              data-product-price="150"
+              data-product-category="Jewellery"
+              data-product-image="images/Jewellery/MultiColor Flower Earrings.jpg"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- box4 -->
+        <div class="product-box">
+          <!-- img -->
+          <a href="#" class="product-box-img">
+            <img src="images/Paintings/Wall-E.png" alt="Paintings" />
+            <span>New</span>
+          </a>
+          <!-- text -->
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Wall-E (Canvas-Painting)</a>
+            <span>Rs.239 </span>
+            <button
+              class="product-cart-btn"
+              data-product-id="702"
+              data-product-name="Wall-E (Canvas-Painting)"
+              data-product-price="239"
+              data-product-category="Paintings"
+              data-product-image="images/Paintings/Wall-E.png"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services">
+      <!-- service-box -->
+      <div class="service-box">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Free Shipping</span>
+        <p>Free shipping for all orders</p>
+      </div>
+
+      <!-- service-box -->
+      <div class="service-box">
+        <i class="fa-solid fa-headphones"></i>
+        <span>Support 24/7</span>
+        <p>We Support 24H a day</p>
+      </div>
+
+      <!-- service-box -->
+      <div class="service-box">
+        <i class="fa-solid fa-rotate"></i>
+        <span>100% Money Back</span>
+        <p>You have 30 days to return</p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- company-box -->
+        <div class="footer-company-box">
+          <!-- logo -->
+          <a href="#" class="footer-logo">
+            <img src="images/LOGO.png" alt="logo" />
+          </a>
+          <!-- details -->
+          <p>
+            SmarKet is a unique online platform dedicated to celebrating student
+            creativity.
+          </p>
+          <!-- social -->
+          <div class="footer-social">
+            <!-- facebook -->
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <!-- instagram -->
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- link -->
+        <div class="footer-link-box">
+          <strong>Main Links</strong>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#category">Categories</a></li>
+            <li><a href="#shopping-banner">Shop</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#recent-products">Recent</a></li>
+          </ul>
+        </div>
+
+        <!-- subscribe -->
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <p>Fresh products, straight to your inbox.</p>
+          <form class="subscribe-box">
+            <input type="email" placeholder="Email" name="subscribe" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="footer-bottom">
+        <span>MADE BY SMARKET</span>
+        <span>&copy; COPYRIGHT 2025 - SMARKET</span>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>

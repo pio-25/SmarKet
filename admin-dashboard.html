@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <nav>
+          <ul>
+            <li><a href="#manage-sellers">Manage Sellers</a></li>
+            <li><a href="#manage-products">Manage Products</a></li>
+            <li><a href="index.html">Go to Buyer View</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content2">
+        <section id="manage-sellers">
+          <h3>Manage Sellers</h3>
+          <table id="seller-table">
+            <thead>
+              <tr>
+                <th>Seller ID</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+        <section id="manage-products">
+          <h3>Manage All Products</h3>
+          <div id="all-product-list" class="product-list-grid"></div>
+        </section>
+      </main>
+    </div>
+    <script src="dashboard_scripts.js"></script>
+  </body>
+</html>
